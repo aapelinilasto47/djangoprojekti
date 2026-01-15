@@ -1,0 +1,10 @@
+uusi_env/
+.env 
+db.sqlite3
+staticfiles/
+media/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+Thumbs.db

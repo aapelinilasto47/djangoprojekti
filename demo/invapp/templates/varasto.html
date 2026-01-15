@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Varasto Page</h2>
+    <p>Tervetuloa varastonhallintasivulle. Täältä voit hallita varastotietoja ja tuotteita.</p>
+    <ul>
+        {% for varasto in varastot %}
+            <li>Nimi: {{ varasto.ean_koodi.nimi }} - Sijainti: {{ varasto.sijainti }}</li>
+            <li> Määrä: {{ varasto.määrä }} - EAN: {{ varasto.ean_koodi.ean_koodi }}</li>
+            <br>
+        {% empty %}
+            <li>Ei varastoja saatavilla.</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
