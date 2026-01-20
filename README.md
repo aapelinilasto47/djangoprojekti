@@ -50,12 +50,25 @@ http://127.0.0.1:8000/
 ## API-rajapinnat (Endpoints)
 
 Polku,                          Metodi,         Kuvaus
+
 /api/users/,                    POST,           Luo uusi käyttäjätunnus.
+
+
 /api-token-auth/,               POST,           Kirjaudu ja hanki Authorization Token.
+
+
 /api/tuotteet/<ean>/skannaa/,   GET,            Hae tuotteen tiedot koodilla.
+
+
 /api/varastot/,                 GET,            Listaa omat varastotuotteet.
+
+
 /api/varastot/,                 POST,           Lisää uusi tuote varastoon.
+
+
 /api/varastot/vanhentuvat/,     GET,            Listaa pian vanhentuvat tuotteet.
+
+
 
 Huom! Kaikki varastoon liittyvät pyynnöt vaativat headerin:
 
